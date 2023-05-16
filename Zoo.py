@@ -56,7 +56,12 @@ class Zoo:
 
     def feed_all_animal(self):
         for animal in self.animals:
+            print(
+                f' Before feed=> Name: {animal.name}| Health: {animal.health} | Happiness: {animal.happiness}')
             animal.feed()
+            print(
+                f' After feed=> Name: {animal.name}| Health: {animal.health} | Happiness: {animal.happiness}')
+            print("-"*30)
 
 
 zoo1 = Zoo("Abood Zoo")
