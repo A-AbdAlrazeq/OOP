@@ -49,6 +49,9 @@ class Zoo:
     def add_bear(self, name, age):
         self.animals.append(Bear(name, age))
 
+    def add_animal(self, animal):
+        self.animals.append(animal)
+
     def print_all_info(self):
         print("-"*30, self.name, "-"*30)
         for animal in self.animals:
@@ -70,5 +73,6 @@ zoo1.add_lion("Simba", 7)
 zoo1.add_tiger("Rajah", 12)
 zoo1.add_tiger("Shere Khan", 13)
 zoo1.add_bear("bear", 15)
-zoo1.feed_all_animal()
+b1 = Bear("Panda", 13)
+zoo1.add_animal(b1)
 zoo1.print_all_info()
